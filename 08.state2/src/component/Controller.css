@@ -1,0 +1,11 @@
+button {
+  width: 60px;
+}
+
+.plus {
+  background-color: skyblue;
+}
+
+.minus {
+  background-color: orange;
+}

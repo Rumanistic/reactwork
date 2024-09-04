@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+}
+
+header {
+  background-color: cadetblue;
+  color: white;
+  height: 15vh;
+  line-height: 15vh;
+}
+
+section {
+  height: 70vh;
+}
+
+ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+li {
+  padding: 20px 100px;
+}
+
+li:hover {
+  background-color: coral;
+  animation-name: menu-flow;
+  animation-duration: 1s;
+  animation-duration: linear;
+
+}
+
+@keyframes menu-flow {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: coral;
+  }
+}
+
+
+
+
+footer {
+  background-color: greenyellow;
+  color: white;
+  height: 15vh;
+  line-height: 15vh;
+}

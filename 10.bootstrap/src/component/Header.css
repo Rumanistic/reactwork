@@ -1,0 +1,20 @@
+.div-header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  margin: 5px 2%;
+}
+
+.span-hn-container > h2 {
+  position: absolute;
+}
+
+.div-login-container {
+  display: flex;
+}
+
+.div-login-container > label {
+  width: 50px;
+}

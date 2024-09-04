@@ -1,22 +1,7 @@
 import { Fragment, useState, useEffect } from 'react';
-// import './App.css';
 
-
-function App() {
-  const style = {
-    // key: value, ... sth
-    div : {
-      backgroundColor: 'lightgreen',
-      padding: '10% 30%',
-      textAlign: 'center',
-      fontSize: '30px'
-    },
-
-    h1 : {
-      color: 'red'
-    }
-  }
-
+function Timer() {
+  
   let [hr, setHr] = useState(0);
   let [min, setMin] = useState(0);
   let [sec, setSec] = useState(0);
@@ -44,15 +29,10 @@ function App() {
   }, [time])
 
   return (
-    <div className="App" style={style.div}>
-        <h1>Timer!</h1>
-        <p>{hr.toString().padStart(2, '0')} : {min.toString().padStart(2, '0')} : {sec.toString().padStart(2, '0')}</p>
-        <h1 style={style.h1}>더조은에 오신것을 환영합니다.</h1>
-        <h3>의료용 디지털 영상 표준활용 실무 프로젝트 과정</h3>
-        <p className="class1">react로 css 적용하기</p>
-        <p id="p1">id로 스타일 적용하기</p>
-    </div>
+    <header align="center">
+      <p>{hr.toString().padStart(2, '0')} : {min.toString().padStart(2, '0')} : {sec.toString().padStart(2, '0')}</p>
+    </header>
   );
 }
 
-export default App;
+export default Timer;
